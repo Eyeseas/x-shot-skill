@@ -1,0 +1,7 @@
+# macOS
+.DS_Store
+
+# runtime output / temp
+x-shot-*.png
+tile_*.png
+*.tmp
