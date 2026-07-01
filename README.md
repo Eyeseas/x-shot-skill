@@ -1,5 +1,7 @@
 # x-shot
 
+**English** · [简体中文](README.zh-CN.md)
+
 A [Claude Code](https://claude.com/claude-code) skill that screenshots **real X (Twitter) tweets in their native web style** — avatar, verified badge, translation prompt, body text, embedded media, quoted tweets, timestamp and engagement counts — all in one crisp, retina-quality PNG.
 
 It drives **your own logged-in Chrome** through the [opencli](https://github.com/jackwener/opencli) browser bridge, so the capture includes elements that only appear when you're signed in (Subscribe button, view count, translation prompt, etc.). No API keys, no headless login, no cookies to export.
