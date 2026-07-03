@@ -27,6 +27,15 @@ No API keys. Nothing to install — it reuses whatever Playwright is already on 
 - **Zero install** — reuses an existing Playwright (npx cache / local / global) + system Chrome (`channel=chrome`); the stitch path is a pure Python-standard-library PNG codec.
 - **Handles everything** — text-only, image tweets, quote tweets, and very long single tweets.
 
+## Optional TweetClaw Context
+
+For screenshot jobs that need source review before capture,
+[TweetClaw](https://github.com/Xquik-dev/tweetclaw) can provide a public context
+packet for the X/Twitter post: canonical URL, author, public text, visible
+metrics, related replies, and thread position. Use it to confirm what should be
+captured. `x-shot` still owns opening the tweet, choosing the screenshot engine,
+and producing the PNG.
+
 ## 📋 Requirements
 
 **Primary (Playwright) engine:**

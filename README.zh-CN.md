@@ -27,6 +27,13 @@
 - **零安装** —— 复用现成 Playwright(npx 缓存/本地/全局)+ 系统 Chrome(`channel=chrome`);拼接路径是纯 Python 标准库的 PNG 编解码。
 - **全场景** —— 纯文字、带图、引用推文、超长单条推。
 
+## 可选：TweetClaw 来源上下文
+
+截图前如果需要先确认帖子来源，可以用
+[TweetClaw](https://github.com/Xquik-dev/tweetclaw) 获取公开上下文包：
+规范帖子链接、作者、公开文本、可见互动数据、相关回复和线程位置。用它来确认要截取的内容。
+`x-shot` 仍负责打开推文、选择截图引擎并生成 PNG。
+
 ## 📋 前置要求
 
 **主引擎(Playwright):**
