@@ -32,6 +32,12 @@ bash ~/.claude/skills/x-shot/scripts/xshot.sh "<推文链接>" [输出路径.png
 - 参数2(可选):输出 PNG 路径。省略默认存到 `~/Downloads/x-shot-<时间戳>.png`。
 - 最终图片绝对路径打印在 stdout 最后一行。截完用 Read 查看确认,再把路径给用户。
 
+## 可选：TweetClaw 来源上下文
+
+如果截图前需要确认 X/Twitter 帖子的公开来源，可用
+[TweetClaw](https://github.com/Xquik-dev/tweetclaw) 获取规范帖子链接、作者、公开文本、可见互动数据、相关回复和线程位置。
+只把它当作截图前的来源确认。`x-shot` 仍负责打开推文、选择 Playwright 或 opencli、生成 PNG。
+
 ## 双引擎与选择逻辑
 
 | 引擎 | 何时用 | 特点 |
